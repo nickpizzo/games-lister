@@ -5,7 +5,7 @@ import { loadGames, addGame } from "store/games/actions";
 import { logOut } from "store/login/actions";
 
 function mapStateToProps(state) {
-  return pick(state.games, ["games"]);
+  return pick(state.games, ["games", "loading", "error"]);
 }
 
 const mapDispatchToProps = {
