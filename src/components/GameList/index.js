@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import { pick } from "lodash-es";
 import GameList from "./GameList";
-import { addGame } from "store/games/actions";
+import { loadGames, addGame } from "store/games/actions";
 import { logOut } from "store/login/actions";
 
 function mapStateToProps(state) {
@@ -9,6 +9,7 @@ function mapStateToProps(state) {
 }
 
 const mapDispatchToProps = {
+  loadGames,
   addGame,
   logOut
 };
