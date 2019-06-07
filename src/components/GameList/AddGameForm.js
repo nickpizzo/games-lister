@@ -15,7 +15,7 @@ const AddGameForm = ({ onAddGame }) => {
   };
 
   return (
-    <form onSubmit={handleAddGame}>
+    <form onSubmit={handleAddGame} style={{ marginTop: "2em" }}>
       <Row>
         <Input
           label="New Game Title"
